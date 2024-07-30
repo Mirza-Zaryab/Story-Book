@@ -1,0 +1,557 @@
+:root {
+  /* CSS HEX */
+  --white: #FFFFFFff;
+  --charcoal: #113D51ff;
+  --marigold: #ECA135ff;
+  --persian-red: #D52E2Eff;
+  --middle-blue-green: #96C9BFff;
+  --metallic-seaweed: #1D818Bff;
+  --deep-space-sparkle: #385F6Cff;
+
+}
+
+.color-blue-green {
+  color: var(--middle-blue-green);
+
+}
+
+.space-letter {
+  letter-spacing: 2px;
+}
+
+.color-charcoal {
+  color: var(--charcoal);
+}
+
+.color-marigold {
+  color: var(--marigold)
+}
+
+.button-gradient {
+  background: linear-gradient(135deg, var(--middle-blue-green), 20%, var(--metallic-seaweed));
+}
+
+.gradient-bg {
+  color: linear-gradient(135deg, var(--middle-blue-green), 20%, var(--metallic-seaweed));
+}
+
+.seaweed-bg {
+  background-color: var(--metallic-seaweed);
+}
+
+.blue-gree-bg {
+  background-color: var(--middle-blue-green);
+}
+
+.charcoal-bg {
+  background-color: var(--charcoal);
+}
+
+.pattern-bg {
+  background: url('../assets/background-pattern.jpg')
+}
+
+.how-bg {
+  background: linear-gradient(90deg, #f5f5f5, #d4d4d4);
+  /* #cdcdc9; */
+}
+
+/**ImageButton.js*/
+
+.fileInput {
+  display: none;
+}
+
+.image {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+}
+
+.imageDiv {
+  height: 303px;
+  width: 202px;
+  border: 1px dashed white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageDiv:hover {
+  cursor: pointer;
+}
+
+/* .imageDiv:active{
+    pointer-events: none;
+  } */
+
+.imageInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/**Image.js*/
+
+.delete {
+  display: none;
+  position: absolute;
+
+  transition: transform 500ms ease;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.sideBar {
+  background-color: greenyellow;
+}
+
+#uploadedImage {
+  max-width: 200px;
+  max-height: 300px;
+  z-index: 1;
+  transition: opacity 500ms ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.uploadedImageDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  margin: auto;
+}
+
+#uploadedImage:hover {
+  opacity: 0.33;
+  cursor: pointer;
+}
+
+
+
+.uploadedImageDiv:hover .delete {
+  display: block;
+  transform: scale(4) perspective(1px);
+}
+
+.uploadedImageDiv:hover .disabled {
+  pointer-events: all;
+}
+
+/* .uploadedImageDiv:active .delete {
+    display: block;
+    transform: scale(1) perspective(1px);
+  } */
+
+.page-container {
+  overflow: hidden;
+  width: 1178px;
+  height: 1140px;
+}
+
+
+.page {
+  background: var(--white);
+  /* font-size: 0.75em; */
+  /* width: 15.24cm; */
+  /* height: 22.86cm; */
+  padding: 1.27cm 1.27cm 1.27cm 1.27cm;
+  border: 1px solid lightgrey;
+  z-index: 9;
+  box-shadow:
+    inset 0 -1em 3em rgba(0, 0, 0, 0.1),
+
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.page:hover {
+  cursor: pointer;
+}
+
+.docPage {
+  box-shadow:
+    inset 0 -1em 3em rgba(0, 0, 0, 0.1),
+
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.add-Story-button {
+  background: var(--charcoal);
+}
+
+.add-Story-page-1 {
+
+  box-shadow:
+    inset 0 -19px -1em 3em rgba(0, 0, 0, 0.1),
+
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.add-Story-page-2 {
+  z-index: 1;
+  box-shadow:
+    inset 0 -19px -1em 3em rgba(0, 0, 0, 0.1),
+
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+}
+
+.add-story-text-box {
+  display: flex;
+  justify-content: end;
+
+}
+
+.textEditor {
+  padding: .5cm 1.905cm .5cm 1.27cm;
+  box-shadow:
+    inset 0 -1em 3em rgba(0, 0, 0, 0.1),
+
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  width: 14.63cm;
+  background-color: var(--charcoal);
+  margin-bottom: -2px;
+}
+
+.contributorTextArea {
+  background-color: var(--charcoal);
+  padding: 2px;
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+}
+
+.editor-container {
+  background-color: var(--white);
+
+}
+
+.editor-container .ql-toolbar.ql.snow {
+  /* display: flex; */
+  /* justify-content: center; */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #f3f3f3;
+  border: none;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+}
+
+.editor-container .ql-container {
+  display: flex;
+  justify-content: center;
+}
+
+.editor-container .ql-editor {
+  width: 15.24cm;
+  height: 22.86cm;
+  padding: 1.27cm 1.905cm 1.27cm 1.27cm;
+  margin: 1rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+  background-color: var(--white);
+  border: none;
+  overflow: hidden;
+
+}
+
+.custom-wrapper {
+  width: 100% !important;
+  display: block !important;
+  margin-bottom: 25px !important;
+  height: 500px !important;    
+}
+/* 380 */
+.custom-editor {
+  height: 250px !important;
+  border: 1px solid #f1f1f1 !important;
+  padding: 5px !important;
+  border-radius: 2px !important;
+  height: 80% !important;
+  border: 1px solid #dfdfdf !important;
+}
+
+@media screen and (max-width: 600px) {
+  .editor-container .ql-editor {
+    margin: 0;
+    padding: 5px;
+  }
+}
+
+.ques-sel {
+  height: 35vh !important;
+  overflow-y: auto;
+}
+
+.ques-sel::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(77, 77, 77, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.ques-sel::-webkit-scrollbar {
+  width: 5px;
+  background-color: #F5F5F5;
+}
+
+.ques-sel::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(77, 77, 77, 0.3);
+  background-color: #555;
+}
+
+.chapt-sel {
+  height: 35vh !important;
+  overflow-y: auto;
+}
+
+.chapt-sel::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(77, 77, 77, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.chapt-sel::-webkit-scrollbar {
+  width: 5px;
+  background-color: #F5F5F5;
+}
+
+.chapt-sel::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(77, 77, 77, 0.3);
+  background-color: #555;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  min-width: 230px !important;
+  background-color: #3bd2c3;
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 100%;
+  /* Change left to 100% */
+  margin-left: 5px;
+  /* Add a margin */
+  transform: translate(-5%, -50%);
+  /* Center the tooltip */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.rdw-image-modal-upload-option-label {
+  overflow: hidden;
+  width: 180px !important;
+  text-overflow: ellipsis;
+}
+
+.DraftEditor-root {
+  font-size: 14px;
+}
+
+.grow {
+  height: 63px;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  text-align: center;
+  overflow: hidden;
+  transition: 1.5s;
+}
+
+.grow:hover {
+  min-height: 63px !important;
+  height: auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 90vh;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
+  /* Change the color to your desired value */
+}
+
+.chapQues {
+  height: 70vh !important;
+  overflow-y: auto;
+}
+
+.chapQues::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(77, 77, 77, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.chapQues::-webkit-scrollbar {
+  width: 5px;
+  background-color: #F5F5F5;
+}
+
+.chapQues::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(77, 77, 77, 0.3);
+  background-color: #0dbaa8;
+}
+
+.editChap {
+  height: 100vh !important;
+  overflow-y: auto;
+}
+
+.editChap::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(77, 77, 77, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.editChap::-webkit-scrollbar {
+  width: 5px;
+  background-color: #F5F5F5;
+}
+
+.editChap::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(77, 77, 77, 0.3);
+  background-color: #0dbaa8;
+}
+
+.delIcon {
+  min-width: 20px !important;
+  min-height: 24px !important;
+  max-width: 20px !important;
+  max-height: 24px !important;
+}
+
+.bookBorder {
+  border: 1px solid rgb(225, 225, 225, 0.3);
+}
+
+.textBox {
+  background-color: rgba(128, 128, 128, 0.2);
+  font-family: 'Cormorant Garamond', serif !important;
+}
+
+.colorBadge {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 0%, 0% 0%);
+}
+
+.cropper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.crop-container {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+}
+
+.controls {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  width: 50%;
+  transform: translateX(-50%);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  
+}
+.controls2 {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 50%;
+  transform: translateX(-50%);
+  height: 140px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.slider {
+  padding: 22px 0px;
+}
+
+.zoom-range {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 2px;
+  border-top: 1px solid #3f51b5;
+  border-bottom: 1px solid #3f51b5;
+  background: #3f51b5;
+  width: 100%;
+}
+
+.zoom-range::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #3f51b5;
+  background: #3f51b5;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.zoom-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #3f51b5;
+  background: #3f51b5;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.controls:hover input[type='range']::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px 8px rgba(63, 81, 181, 0.16);
+  border-radius: 50%;
+}
+
+.controls:hover input[type='range']::-moz-range-thumb {
+  box-shadow: 0px 0px 0px 8px rgba(63, 81, 181, 0.16);
+}
+
+.react-pdf__Document .stf__parent .stf__wrapper {
+  padding-bottom: 0% !important;
+}
+
+.edit-icon{
+  color: #969696; /* Default color */
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.edit-icon:hover{
+  color: teal;
+}
