@@ -1,0 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+
+}
+
+.colorStrip {
+    background-color: var(--middle-blue-green);
+}
